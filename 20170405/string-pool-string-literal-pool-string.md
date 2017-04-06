@@ -103,7 +103,7 @@ String str = new StringBuilder(str).append("def").toString();
 
 _"def"会是字符串池里的第二个字符串_
 
-最后：`str="abcdef"`
+最后：`str = "abcdef"`
 
 _"abcdef"会是字符串池里的第三个字符串_
 
