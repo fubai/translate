@@ -1,12 +1,12 @@
 # Java平台和Java社区进程(JCP)概述
 
-我要以本文向大家介绍Java平台最重要的部分，并就其进化进程做一个简明解释。首先，我要介绍不同版Java之间的区别：Java ME，Java SE和Java EE，还有一些重要的，与它们有关的缩写，比如JDK，JRE，JVM，JSP，JPA等等。最后提供一个Java社区进程的概述。
+我要以本文向大家介绍Java平台最重要的部分，并就其Java平台进化的进程做一个简明解释。首先，我要介绍不同版Java之间的区别：Java ME，Java SE和Java EE，还有一些重要的，与它们有关的缩写，比如JDK，JRE，JVM，JSP，JPA等等。最后提供一个Java社区进程的概述。
 
 ## Java版本
 
-要深入了解*Java社区进程*(JCP)，先懂得Java平台主要的部分是非常重要的。Java被分成了三个不同的版本：Java标准版(Java SE)，Java企业版(Java EE)和Java微小版(Java ME)。
+在深入了解*Java社区进程*(JCP)之前，先了解一下Java平台的主要部分是非常重要的。Java被分成了三个不同的版本：Java标准版(Java SE)，Java企业版(Java EE)和Java微小版(Java ME)。
 
-Java ME 被创建用于支持[物联网](https://en.wikipedia.org/wiki/Internet_of_things)中的应用，它们运行在嵌入式设备或手机端设备上。到目前为止，这个版本远不如其兄弟版本那样受欢迎，本文不会把重点放在它上面，尽管也有很多缩写和进化进程和它有关。
+Java ME被创建用于支持[物联网](https://en.wikipedia.org/wiki/Internet_of_things)中的应用，它们运行在嵌入式设备或手机端设备上。到目前为止，这个版本远不如其兄弟版本那样受欢迎，本文不会把重点放在它上面，尽管也有很多缩写和进化进程和它有关。
 
 Java标准版和企业版[被整个世界大量使用](http://www.tiobe.com/tiobe-index/)。它们一起被使用在很多解决方案上，比如[网站应用，应用的服务器，大数据技术等等](http://javarevisited.blogspot.com.br/2014/12/where-does-java-used-in-real-world.html)。
 
@@ -25,19 +25,19 @@ Java标准版(Java SE)是运行Java程序的最小要求。这个版本为Java�
 
 ### Java虚拟机(JVM)
 
-Java虚拟机(JVM)负责支持Java应用的运行。它是Java平台的组成部分，就是它实现了Java的*写一次，哪都可以运行*。每个操作系统(Windows，Linux，Mac等)都需要有自己的JVM的实现，否则就不能运行Java应用。
+Java虚拟机(JVM)负责支持Java应用的运行。它是Java平台的组成部分，就是它实现了Java的**写一次，哪都可以运行**的目标。每个操作系统(Windows，Linux，Mac等)都需要有自己的JVM实现，否则就不能运行Java应用。
 
-我们以一个从Java所在主机上读取文件的应用举个例子。如果这个应用不是运行在像*JVM*的引擎之上，那么一个类似*IO*操作的任务，就必须要给每种系统都写一份不同的程序。这将导致这个应用的发布进程变慢，而且很难在不同的操作系统上支持、分享这个应用。
+我们以一个从Java所在主机上读取文件的应用举个例子。如果这个应用不是运行在像*JVM*这样的引擎之上，那么一个类似*IO*操作的任务，就必须要给每种系统都写一份不同的程序。这将导致这个应用的发布进程变慢，而且很难在不同操作系统上去支持、分享这个应用。
 
-要在脑子里记一个重要的概念，JVM首先是一个规范(然后才是其它什么东西)。作为一个规范，不同的提供商就可以提供自己的JVM实现。[Wikipedia上有一篇保持更新的文章列出了开源和不开源的JVM](https://en.wikipedia.org/wiki/List_of_Java_virtual_machines)，最重要也最被广泛使用的JVM有：[Open JDK](http://openjdk.java.net/)(开源的)，[IBM的J9](https://www.ibm.com/support/knowledgecenter/SSYKE2_8.0.0/com.ibm.java.lnx.80.doc/user/java_jvm.html)和[Oracle JVM](http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html)(后两个都不是开源的)。
+要在脑子里记一个重要概念，JVM首先是一个规范(然后才是其它什么东西)。作为一个规范，不同的提供商就可以提供自己的JVM实现。[Wikipedia上有一篇保持更新的文章列出了开源和不开源的JVM](https://en.wikipedia.org/wiki/List_of_Java_virtual_machines)，最重要也最被广泛使用的JVM有：[Open JDK](http://openjdk.java.net/)(开源的)，[IBM的J9](https://www.ibm.com/support/knowledgecenter/SSYKE2_8.0.0/com.ibm.java.lnx.80.doc/user/java_jvm.html)和[Oracle JVM](http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html)(后两个都不是开源的)。
 
-![java-architectures](../resources/imgs/20170408/java-architectures.png)*Java应用运行在基于特定操作系统和硬件架构实现的JVM之上*
+![java-architectures](../resources/imgs/20170408/java-architectures.png)<p align="center">*Java应用运行在基于特定操作系统和硬件架构实现的JVM之上*</p>
 
 ### Java类库(JCL)
 
 Java类库是一系列标准库的集合，对于任何运行在*JVM*上的应用都是可用的。库是由类组成的，这些库能让程序处理常见的任务，比如网络交互，集合控制，文件操作，用户界面创建等。这些标准库也叫做[Java标准版API](https://docs.oracle.com/javase/8/docs/api/)。
 
-截止Java 8，*JVM*中应用可用的类超过了4000个。这导致Java的安装需要消耗[很大的硬盘空间](http://www.oracle.com/technetwork/java/javase/windows-diskspace-140460.html)。
+截止Java 8，*JVM*里可供应用使用的类超过了4000个。这导致Java的安装需要消耗[很大的硬盘空间](http://www.oracle.com/technetwork/java/javase/windows-diskspace-140460.html)。
 
 Java成员意识到Java平台变得太大了，所以已经针对这个问题在Java 8上提了一个特性[compact profiles](http://www.oracle.com/technetwork/java/embedded/resources/tech/compact-profiles-overview-2157132.html)，并把整个Java 9的API都模块化了。
 
@@ -45,7 +45,7 @@ Java成员意识到Java平台变得太大了，所以已经针对这个问题在
 
 ### Java运行时环境(JRE)
 
-*Java运行时环境*(JRE)是一个工具集合，为Java应用提供了运行环境。每当用户要去运行一个Java程序时，就必须为供应方特定的环境架构(Linux x86，Linux x64，Mac OS X，Windows x64等等)选择一个可用的版本。
+*Java运行时环境*(JRE)是一个工具集合，为Java应用提供了运行环境。每当用户要去运行一个Java程序时，就必须为供应方的环境架构(Linux x86，Linux x64，Mac OS X，Windows x64等等)选择一个可用的版本。
 
 Java非常谨慎的保持着新版本对老版本的兼容性。因此，建议安装最新的可用版，新版可能会有更高的性能。
 
@@ -55,47 +55,47 @@ Java非常谨慎的保持着新版本对老版本的兼容性。因此，建议�
 
 *Java开发工具集*(JDK)是*JRE*的扩展。除了*JRE*提供的文件和工具，*JDK*还包含用于创建Java程序的编译器和其它一些工具(比如JavaDoc和Java调试器)。因此，要开发Java应用就要安装*JDK*。
 
-现今，JDK的绝大部分工具都不会被开发者直接使用。通常，Java开发者依赖的是第三方工具(比如[Apache Maven](https://maven.apache.org/)和[Gradle](https://gradle.org/))实现自动化编译、构建和分发的进程。开发者依赖IDEs(集成开发环境)构建、调试他们的项目。
+现今，JDK的绝大部分工具都不会被开发者直接使用了。通常，Java开发者是依赖第三方工具(比如[Apache Maven](https://maven.apache.org/)和[Gradle](https://gradle.org/))，来实现自动化编译、构建和分发的过程。开发者依赖IDE(集成开发环境)构建、调试他们的项目。
 
 ## Java企业版(Java EE)
 
-*Java企业版*(Java EE)被创建用于扩展*Java SE*，它通过规范定义了一些被企业级应用普遍使用的功能。最新版[有超过40个规范](https://en.wikipedia.org/wiki/Java_EE_version_history#Java_EE_7_.28June_12.2C_2013.29)，帮助开发者创建[通过web service交互的应用](http://www.oracle.com/technetwork/java/javaee/tech/webservices-139501.html)，[把面向对象的数据转换成实体关系模型的应用](https://docs.oracle.com/javaee/7/tutorial/partpersist.htm)，[处理事务回话的应用](http://www.oracle.com/technetwork/java/javaee/jta/index.html)，[等等](http://www.oracle.com/technetwork/java/javaee/overview/index.html)。
+*Java企业版*(Java EE)被创建用于扩展*Java SE*，它通过规范定义了一些被企业级应用普遍使用的功能。最新版[有超过40个规范](https://en.wikipedia.org/wiki/Java_EE_version_history#Java_EE_7_.28June_12.2C_2013.29)，帮助开发者创建[通过web service交互的应用](http://www.oracle.com/technetwork/java/javaee/tech/webservices-139501.html)，[把面向对象的数据转换成实体关系模型的应用](https://docs.oracle.com/javaee/7/tutorial/partpersist.htm)，[处理事务会话的应用](http://www.oracle.com/technetwork/java/javaee/jta/index.html)，[等等](http://www.oracle.com/technetwork/java/javaee/overview/index.html)。
 
-企业版定义规范最大的优点在于，不同的提供商可以开发自己的应用服务器来支持Java EE。这就产生了更丰富的环境，企业可以选择最好的供应商支持他们的业务。
+企业版定义规范的最大优点在于，不同的提供商可以开发自己的应用服务器来支持Java EE。这就产生了更丰富的环境，企业可以选择最好的提供商来支持他们的业务。
 
 ### Java企业版的提供商
 
-写作本文的时候有[8个合格的Java EE实现提供商](https://en.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition#Certified_application_servers)。这其中有两个免费开源的：[GlassFish服务器开源版](https://glassfish.java.net/)和[WildFly](http://wildfly.org/)。
+写作本文的时候有[8个合格的Java EE实现](https://en.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition#Certified_application_servers)。这其中有两个免费开源的：[GlassFish服务器开源版](https://glassfish.java.net/)和[WildFly](http://wildfly.org/)。
 
-*GlassFish*是Oracle开发的，*WildFly*是Red Hat开发的。他们还提供了这些应用服务器的私有收费版。Oracle提供了*Oracle GlassFish Server*，Red Hat提供了*JBoss Enterprise Application Platform*。
+*GlassFish*是Oracle开发的，*WildFly*是Red Hat开发的。他们还提供了这些应用服务器的私有收费版。Oracle提供了*Oracle GlassFish Server*，Red Hat提供了*JBoss企业应用平台*。
 
 也许有人会奇怪为什么像Oracle和Red Hat这样的公司要提供两个版本的应用服务器：一个开源免费，另一个付费私有。这些版本之间最大的区别是，付费版通常有更高的性能和更好的支持。提供商花费了巨大的投资保证这些收费版运行地顺利，并且尽可能快的解决它们出现的问题。
 
 ### Java企业版的特性
 
-上面说过，基于*JSR*，*Java EE*有超过40个特性。这些特性帮助公司处理普遍地像持久化，安全，网络接口，状态验证等等需求。下面的列表列出了一些最重要和最被广泛使用的*Java EE*特性：
+上面说过，基于*JSR*，*Java EE*有超过40个特性。这些特性帮助公司处理持久化，安全，网络接口，状态验证等等普遍地需求。下面的列表列出了一些最重要和最被广泛使用的*Java EE*特性：
 
 * **Java Persistence API (JPA)**：一个在Java对象和关系型数据库之间，用于访问，持久化和管理数据的规范。
 * **JavaServer Faces (JSF)**：一个为网站应用构建基于组件的用户界面的规范。
 * **JavaServer Pages (JSP)**：一个帮助开发者动态创建生成HTML网页的技术。
 * **Java API for RESTful Web Services (JAX-RS)**：一个支持创建RESTful web service的规范。
-* **Enterprise Java Beans (EJB)**：一个用于开发封装了应用的业务逻辑组件的规范。
+* **Enterprise Java Beans (EJB)**：一个用于开发封装了应用业务逻辑组件的规范。
 * **Context and Dependency Injection (CDI)**：一个允许开发者在Java中使用[反转控制](https://en.wikipedia.org/wiki/Inversion_of_control)的技术。
 
 ## Java社区进程(JCP)
 
-*Java社区进程*(JCP)是一个确定并标准化Java技术的进程。JCP的成员，比如开发人员和公司，在这个进程里一起合作进化Java平台。任何对已存在Java技术的改进，或者新Java技术的引入，都是通过*Java规范请求*(JSRs)来的。
+*Java社区进程*(JCP)是一个确定并标准化Java技术的进程。JCP的成员，比如开发人员和公司，在这个进程里一起合作进化Java平台。任何对已经存在的Java技术的改进，或者新Java技术的引入，都是通过*Java规范请求*(JSR)来的。
 
-作为一个例子，让我们来考虑一下RESTful Web Services的Java API规范(JAX-RS)引入*Java EE*的过程。为了在*Java EE 5*中发布该规范，Sun公司发布了一个*JSR*到*JCP*程序中，[JSR311](https://jcp.org/en/jsr/detail?id=311#orig)。这个JSR申请定义的部分详情如下：
+作为一个例子，让我们来考虑一下RESTful Web Services的Java API规范(JAX-RS)被引入*Java EE*的过程。为了在*Java EE 5*中发布该规范，Sun公司发布了一个*JSR*到*JCP*程序中，[JSR311](https://jcp.org/en/jsr/detail?id=311#orig)。这个JSR定义的部分详情如下：
 
 * 新规范的描述
 * 新规范所在的平台
 * 为什么需要这个新的规范
 * 新规范所依赖的技术
 
-这个规范请求提交之后，*执行委员会*(EC)的成员分析决定了这个请求是否值得注意。由于*EC*批准了JSR311，所以Mark Hadley和Paul Sandoz(以前在Sun公司工作)被任命为*规范领导者*，并在*专家组*成员和*贡献者*们的帮助下继续工作。
+这个规范请求被提交之后，*执行委员会*(EC)的成员分析决定这个请求是否值得注意。由于*执行委员会*批准了JSR311，所以Mark Hadley和Paul Sandoz(以前在Sun公司工作)被任命为*规范领导者*，并在*专家组*成员和*贡献者*们的帮助下继续工作。
 
-就像上面这个例子，任何一个*JSR*的发布所需要的角色和工作流程都被定义在*JCP*程序中，并且由*EC*治理。
+就像上面这个例子，任何一个*JSR*的发布所需要的角色和工作流程都被定义在*JCP*程序中，并且由*执行委员会*治理。
 
 ### Java社区进程会员
 
@@ -113,18 +113,18 @@ Java非常谨慎的保持着新版本对老版本的兼容性。因此，建议�
 
 ### 执行委员会(EC)
 
-*执行委员会*(EC)扮演着*JCP*程序中最重要的角色。这个组的会员必须要分析，建议，投票和决定批准提交的*JSR*。而且还要负责指导整个平台的进化，*EC*和整个*JCP*程序还要负责*JCP*程序本身，保证它是遵循程序和会员的社区期望的。
+*执行委员会*(EC)扮演着*JCP*程序中最重要的角色。这个组的会员必须要分析，建议，投票和决定批准提交的*JSR*。而且还要负责指导整个平台的进化，*执行委员会*和整个*JCP*程序还要负责*JCP*程序本身，保证它是遵循程序和会员的社区期望的。
 
 委员会的成员是通过[年度选举](https://jcp.org/en/participation/committee)选举出来的，他们的责任是：
 
-* 检查，投票批准或拒绝新的*JSP*提议
-* 检查，投票批准或拒绝公开评阅后的草案
-* 决定*JSP*什么时候应该被撤回
+* 检查，投票批准或拒绝新的*JSR*提议
+* 检查，投票批准或拒绝公开审阅后的草案
+* 决定*JSR*什么时候应该被撤回
 * 合作修订*JCP*程序
 
 ### 规范领导者
 
-*规范领导者*通常是规范的作者，或者像*JAX-RS*规范一样是和提交申请的组织有关的人。*规范领导者*的主要责任是领导*专家组*成员和*贡献者*开发规范，而且还要：
+*规范领导者*通常就是规范的作者，或者像*JAX-RS*规范一样是提交申请的组织的人。*规范领导者*的主要责任是领导*专家组*成员和*贡献者*开发规范，而且还要：
 
 * 提供*JSR*的参考实现
 * 完成*技术兼容工具*(TCK) - [一个测试套件用来测试*JSR*的正确性](https://jcp.org/en/resources/tdk)
@@ -132,7 +132,7 @@ Java非常谨慎的保持着新版本对老版本的兼容性。因此，建议�
 
 ### 贡献者
 
-*贡献者*是非正式会员(比如签订了*非正式会员协议*的个人)，帮助*专家组*和*规范领导者*测试开发一个*JSR*。这个角色是*JCP*程序的第一步。在一个或多个*JSR*上做出重大贡献的*贡献者*，有很好的机会被考虑作为将来的*专家组*候选者或*规范领导者*。
+*贡献者*是非正式会员(比如签订了*非正式会员协议*的个人)，帮助*专家组*和*规范领导者*测试开发一个*JSR*。这个角色是*JCP*程序里所有角色的第一步。在一个或多个*JSR*上做出过重大贡献的*贡献者*，有可能有很好的机会被考虑作为将来的*专家组*候选者或*规范领导者*。
 
 ### Java规范请求(JSR)
 
@@ -170,15 +170,15 @@ Java非常谨慎的保持着新版本对老版本的兼容性。因此，建议�
 
 ### 建立专家组
 
-当执行委员会批准了一个*JSR*之后，*规范领导者*就开始建立为规范工作的*专家组*和*贡献者*团队。当全体人员到齐后，他们就可以开始做*早期草案审阅*(EDR)了。
+当执行委员会批准了一个*JSR*之后，*规范领导者*就可以建立为规范工作的*专家组*和*贡献者*团队了。当全体人员到齐后，他们就可以开始做*早期草案审阅*(EDR)了。
 
 ### 早期草案审阅
 
-*早期草案审阅*的目标是把草稿版的协议尽快改成适合*公开审阅*的版本。这个阶段公众的参与是必要而重要的，因为他们可以提出架构和技术上的问题，提升规范。
+*早期草案审阅*的目标是把草稿版的协议尽快改成适合*公开审阅*的版本。这个阶段，公众的参与是必要且重要的，因为他们可以提出架构和技术上的问题，提升规范。
 
 ### 公开审阅
 
-到达这个阶段说明已经很接近*JSR*的完整定义了，专家组已经准备好开始开发*参考实现*(RI)了。这个阶段的目标是最后收集一次反馈，在进入*最终提议草案*之前给社区一个机会贡献最后一次。
+到达这个阶段说明已经很接近*JSR*的完整定义了，专家组已经准备好开始开发*参考实现*(RI)了。这个阶段的目标是最后收集一次反馈，在进入*最终提议草案*之前给社区一个机会，贡献最后一次。
 
 ### 最终提议草案
 

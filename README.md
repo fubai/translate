@@ -5,3 +5,5 @@
 `2017-03-27` [理解Java内存模型和垃圾回收](20170327/Understanding_the_Java_Memory_Model_and_Garbage_Collection.md)
 
 `2017-04-05` [Java中的字符串池](20170405/string-pool-string-literal-pool-string.md)
+
+`2017-04-08` [Java平台和Java社区进程(JCP)概述](20170408/java-platform-and-java-community-process-overview.md)
