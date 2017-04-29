@@ -1,6 +1,6 @@
 # IPFS - 基于内容寻址的，版本控制的，P2P文件系统(草稿3)
-<p align="center">Juan Benet</p>
-<p align="center">juan@benet.ai</p>
+<div style="text-align:center;">Juan Benet</div>
+<div style="text-align:center;">juan@benet.ai</div>
 
 ## 抽象
 
@@ -48,7 +48,7 @@ S/Kademlia[1]在两个重要的方面扩展了Kademlia，以防止恶意的攻�
 
 ### 2.2 块交换 - BitTorrent
 
-BitTorrent[3]是一个获得了广泛成功的P2P文件共享系统。它成功的协调了网络里不信任对等节点之间的合作，使他们互相之间完成了文件块的分发。BitTorrent和其生态系统的关系特性给IPFS带来了如下设计：
+BitTorrent[3]是一个获得了广泛成功的P2P文件共享系统。它成功的协调了网络里不信任对等节点之间的合作，使他们互相之间完成了文件块的分发。BitTorrent和其生态系统的关键特性给IPFS带来了如下设计：
 
 1. BitTorrent的数据交换协议使用了一个准tit-for-tat的策略：奖励互相贡献的节点，惩罚只拿取别人资源的节点。
 2. BitTorrent的对等节点会跟踪可用的文件块，首先优先发送稀少的块。这使得种子传播者的负载减少了，非种子播种者的对等节点之间也可以互相交易。3. BitTorrent的标准tit-for-tat策略对于一些可被利用的带宽共享策略来说，是脆弱的。PropShare[8]不同，它是一个对等节点带宽分配策略，可以更好的抵御带宽共享策略的问题，提高对等节点们的性能。
