@@ -10,4 +10,4 @@
 
 `2017-04-29` [IPFS - 基于内容寻址的，版本控制的，P2P文件系统(草稿3)](20170429/ipfs.md)
 
-`2017-05-04` [Some graph about the IPFS](20170504/ipfs-some-graph.md)
+`2017-05-04` [Some graph about the IPFS](20170504/ipfs-some-graph.txt)
