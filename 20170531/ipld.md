@@ -67,7 +67,7 @@ IPLD对象模型里用map表示一个 _merkle-link_ ，这个map只有一个键`
 
 如果一个应用程序要把只有一个`/`键的对象用作其它目的，这个应用程序就要自己负责转义IPLD对象里的`/`键，这样这个应用程序的键就不会和IPLD对象的`/`键冲突了。
 
-### 什么是_merkle-graph_或_merkle-dag_？
+### 什么是 _merkle-graph_ 或 _merkle-dag_ ？
 
 具有merkle-link的对象会形成图(merkle-graph)，这个对象和这个图都必须是定向的，能不被计算成环，如果密码哈希函数的属性成立的话。这就是 _merkle-dag_ 。因此所有用了 _merkle来做连接_ 的图( _merkle-graph_ )必须是一个有向无环图(DAG是有向无环图的简称，所以才有了 _merkle-dag_ )。
 
@@ -77,11 +77,11 @@ merkle-path是一个unix风格的路径(比如`/a/b/c/d`)，它最初通过 _mer
 
 通用的文件系统可以在IPLD的上层设计一种对象模型，能专用于文件维护并有专有的路径算法可以在这个模型上做查询。
 
-### _merkle-paths_如何工作？
+### _merkle-paths_ 如何工作？
 
-_merkle-path_ 是一种unix风格的路径，它的找寻过程是先通过_merkle-link_解析引用，然后跟随被引用的中间对象中的 _被命名的merkle-link_ 。跟随一个名字意味着要到对象里面去查找，先找到这个 _name_ ，然后解析成关联的 _merkle-link_ 。
+_merkle-path_ 是一种unix风格的路径，它的找寻过程是先通过 _merkle-link_ 解析引用，然后跟随被引用的中间对象中的 _被命名的merkle-link_ 。跟随一个名字意味着要到对象里面去查找，先找到这个 _name_ ，然后解析成关联的 _merkle-link_ 。
 
-比如，假设我们有下面这个_merkle-path_：
+比如，假设我们有下面这个 _merkle-path_ ：
 
 ```
 /ipfs/QmUmg7BZC1YP1ca66rRtWKxpXp77WgVHrnv263JtDuvs2k/a/b/c/d
