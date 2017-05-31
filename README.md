@@ -19,3 +19,5 @@
 `2017-05-31` [IPLD](20170531/ipld.md)
 
 `2017-05-31` [Dags and Objects and Blocks](20170531/Dags_and_Objects_and_Blocks.md)
+
+`2017-05-31` [Be the swarm](20170531/Be_the_swarm.md)
