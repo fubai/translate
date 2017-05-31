@@ -28,3 +28,5 @@
 `2017-05-31` [Be the swarm](20170531/Be_the_swarm.md)
 
 `2017-05-31` [The Inter-Planetary Naming System](20170531/ipld.md)
+
+`2017-05-31` [Pinning](20170531/ipfs_pinning.md)
