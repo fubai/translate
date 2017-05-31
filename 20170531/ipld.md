@@ -555,3 +555,5 @@ outputs:
     amount: 5
 script: OP_VERIFY
 ```
+
+[原文链接](https://github.com/ipld/specs/blob/master/ipld/README.md)
