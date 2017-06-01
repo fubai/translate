@@ -36,3 +36,5 @@
 `2017-05-23` [The Inter-Planetary Naming System](20170523/ipns.md)
 
 `2017-06-01` [Modifying the bootstrap peers list](20170601/ipfs_modifying_the_bootstrap_peers_list.md)
+
+ `2017-06-01` [Configuring your node](20170601/ipfs_configuring_your_node.md)
