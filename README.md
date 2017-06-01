@@ -19,30 +19,30 @@
 
 `2017-04-29` [IPFS - 基于内容寻址的，版本控制的，P2P文件系统(草稿3)](20170429/ipfs.md)
 
-`2017-05-04` [Some graph about the IPFS](20170504/ipfs-some-graph.txt)
+`2017-05-04` [关于IPFS的一些图](20170504/ipfs-some-graph.txt)
 
 `2017-05-31` [IPLD规范](20170531/ipld.md)
 
-`2017-05-31` [Dags and Objects and Blocks! (oh my)](20170531/Dags_and_Objects_and_Blocks.md)
+`2017-05-31` [Dag和对象和块](20170531/Dags_and_Objects_and_Blocks.md)
 
-`2017-05-31` [Be the swarm](20170531/Be_the_swarm.md)
+`2017-05-31` [IPFS集群](20170531/Be_the_swarm.md)
 
-`2017-05-31` [Pinning](20170531/ipfs_pinning.md)
+`2017-05-31` [固定IPFS数据](20170531/ipfs_pinning.md)
 
-`2017-06-01` [Roll your own ipfs!](20170601/making_your_own_ipfs_service.md)
+`2017-06-01` [开发IPFS服务](20170601/making_your_own_ipfs_service.md)
 
-`2017-06-01` [Trivial snapshots with ipfs](20170601/ipfs_snapshots.md)
+`2017-06-01` [IPFS挂载](20170601/ipfs_snapshots.md)
 
-`2017-05-23` [The Inter-Planetary Naming System](20170523/ipns.md)
+`2017-05-23` [IPNS - 星际命名系统](20170523/ipns.md)
 
-`2017-06-01` [Modifying the bootstrap peers list](20170601/ipfs_modifying_the_bootstrap_peers_list.md)
+`2017-06-01` [修改IPFS引导节点列表](20170601/ipfs_modifying_the_bootstrap_peers_list.md)
 
-`2017-06-01` [Configuring your node](20170601/ipfs_configuring_your_node.md)
+`2017-06-01` [配置IPFS节点](20170601/ipfs_configuring_your_node.md)
 
-`2017-06-01` [Adding and Playing Videos](20170601/ipfs_adding_and_playing_videos.md)
+`2017-06-01` [在IPFS上添加播放视频](20170601/ipfs_adding_and_playing_videos.md)
 
-`2017-06-01` [Visualizing objects with graphmd](20170601/ipfs_visualizing_objects_with_graphmd.md)
+`2017-06-01` [用graphmd可视化对象](20170601/ipfs_visualizing_objects_with_graphmd.md)
 
-`2017-06-01` [Git, even more distributed](20170601/ipfs_git_even_more_distributed.md)
+`2017-06-01` [Git，能更分散](20170601/ipfs_git_even_more_distributed.md)
 
-`2017-06-01` [IPFS for websites](20170601/ipfs_for_websites.md)
+`2017-06-01` [IPFS的网站](20170601/ipfs_for_websites.md)
