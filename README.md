@@ -34,3 +34,5 @@
 `2017-06-01` [Trivial snapshots with ipfs](20170601/ipfs_snapshots.md)
 
 `2017-05-23` [The Inter-Planetary Naming System](20170523/ipns.md)
+
+`2017-06-01` [Modifying the bootstrap peers list](20170601/ipfs_modifying_the_bootstrap_peers_list.md)
