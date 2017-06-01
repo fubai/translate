@@ -21,7 +21,7 @@
 
 `2017-05-04` [Some graph about the IPFS](20170504/ipfs-some-graph.txt)
 
-`2017-05-23` [IPNS - IPFS的域名系统](20170523/ipns.md)
+`2017-05-31` [IPLD规范](20170531/ipld.md)
 
 `2017-05-31` [Dags and Objects and Blocks! (oh my)](20170531/Dags_and_Objects_and_Blocks.md)
 
@@ -33,4 +33,4 @@
 
 `2017-06-01` [Trivial snapshots with ipfs](20170601/ipfs_snapshots.md)
 
-`2017-05-31` [The Inter-Planetary Naming System](20170531/ipld.md)
+`2017-05-23` [The Inter-Planetary Naming System](20170523/ipns.md)
