@@ -104,11 +104,11 @@ Et voilà：[svg](https://ipfs.io/ipfs/QmbefthRKDReojALJi8nGPwvUVPqe1aXdoD9ysX44
 
 ## 文件块
 
-`graphmd`在查看文件分块算法上特别好用。For example, here is what the `ipfs` binary looks like with the default semi-balanced indirect block chunking:
+`graphmd`在查看文件分块算法上特别好用。比如下面是默认semi-balanced间接分块算法形成的`ipfs`二进制块：
 
-- [dot output](https://ipfs.io/ipfs/QmQ8yWC1SGn73P1SPSw8iqSBGEscve1N6sQpzd1xzD5EV1/graph.dot)
-- [svg render](https://ipfs.io/ipfs/QmQ8yWC1SGn73P1SPSw8iqSBGEscve1N6sQpzd1xzD5EV1/graph.svg)
-- [pdf render](https://ipfs.io/ipfs/QmQ8yWC1SGn73P1SPSw8iqSBGEscve1N6sQpzd1xzD5EV1/graph.pdf)
+- [dot输出](https://ipfs.io/ipfs/QmQ8yWC1SGn73P1SPSw8iqSBGEscve1N6sQpzd1xzD5EV1/graph.dot)
+- [svg渲染](https://ipfs.io/ipfs/QmQ8yWC1SGn73P1SPSw8iqSBGEscve1N6sQpzd1xzD5EV1/graph.svg)
+- [pdf渲染](https://ipfs.io/ipfs/QmQ8yWC1SGn73P1SPSw8iqSBGEscve1N6sQpzd1xzD5EV1/graph.pdf)
 
 ![](imgs/graph2.png)
 
