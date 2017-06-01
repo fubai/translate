@@ -44,3 +44,5 @@
 `2017-06-01` [Visualizing objects with graphmd](20170601/ipfs_visualizing_objects_with_graphmd.md)
 
 `2017-06-01` [Git, even more distributed](20170601/ipfs_git_even_more_distributed.md)
+
+`2017-06-01` [IPFS for websites](20170601/ipfs_for_websites.md)
