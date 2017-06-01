@@ -152,11 +152,11 @@ $ go run client.go <peerID>
 
 这应该会打印出`Hello! This is whyrusleepings awesome ipfs service`
 
-你现在可能会问自己：“为什么要用这个？它比`net`包好哪儿了？”。下面就是它的优势：
+你现在可能会问自己：“为什么要用`corenet`？它比`net`好哪儿了？”。下面就是它的优势：
 
-1. 请求的目标是peerID，而不是IP地址。
+1. 无论何时请求的目标都是peerID，不是IP地址。
 2. 可以利用内置在我们网络包里的NAT打洞功能。
-3. 替换掉端口号，获得了一个更有意义的协议ID字符串。
+3. 替换掉端口号，获得了一个更具意义的协议ID字符串。
 
 By [whyrusleeping](http://github.com/whyrusleeping)
 
