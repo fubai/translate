@@ -2,13 +2,13 @@
 
 ![](imgs/graph.png)
 
-当用IPFS存储文件或写更复杂的数据结构时，可视化被创建的merkledag通常是非常有用的。为此我写了一个简单的工具叫做`graphmd`(graph merkle dag)。
+当用IPFS存储文件或写更复杂的数据结构时，把被创建出来的merkledag可视化通常是非常有用的。为此我写了一个简单的工具叫做`graphmd`(graph merkle dag)。
 
 `graphmd`是一个非常短的shell脚本([源码](./graphmd))。它使用了`ipfs refs --format`标志生成`dot`输出。
 
 ## 安装graphmd
 
-`graphmd`很快将处于它自己的仓库中，但是现在只能通过下面的方式：
+`graphmd`很快就将处于它自己的仓库中，但是现在只能通过下面的方式：
 
 ```
 ipfs cat Qmcd7Sebd46vxDWjbUERK8w82zp8sgWTtHT5c93kzr2v3M  >/usr/local/bin/graphmd
@@ -30,7 +30,7 @@ use it with dot:
 
 ## 例子
 
-[demo](/ipfs/QmRCJXG7HSmprrYwDrK1GctXHgbV7EYpVcJPQPwevoQuqF)目录:
+[demo](https://ipfs.io/ipfs/QmRCJXG7HSmprrYwDrK1GctXHgbV7EYpVcJPQPwevoQuqF)目录:
 
 ```sh
 > tree demo
