@@ -22,7 +22,7 @@ added QmYeAiiK1UfB8MGLRefok1N7vBTyX8hGPuMXZ4Xq1DPyt7 mysite/
 
 离文件夹名字最近的哈希(倒数第二个)就是咱们想要的，现在开始就叫它`$SITE_HASH`吧。
 
-现在就能在浏览器里打开测试了`http://localhost:8080/ipfs/$SITE_HASH`！下一步可以到其它IPFS节点上查看`http://gateway.ipfs.io/ipfs/$SITE_HASH`。酷不酷？但是这些哈希也太丑了，咱们看看能不能摆脱它们。
+现在就能在浏览器里打开测试`http://localhost:8080/ipfs/$SITE_HASH`了！下一步可以到其它IPFS节点上查看`http://gateway.ipfs.io/ipfs/$SITE_HASH`。酷不酷？但是这些哈希也太丑了，咱们看看能不能摆脱它们。
 
 首先可以用一个包含了`dnslink=/ipfs/$SITE_HASH`的简单DNS TXT记录。这个纪录生效后就可以用`http://localhost:8080/ipns/your.domain`查看了，现在看起来干净多了，还能在网关上看`http://gateway.ipfs.io/ipns/your.domain`。
 
