@@ -30,3 +30,7 @@
 `2017-05-31` [The Inter-Planetary Naming System](20170531/ipld.md)
 
 `2017-05-31` [Pinning](20170531/ipfs_pinning.md)
+
+`2017-06-01` [Roll your own ipfs!](20170601/making_your_own_ipfs_service.md)
+
+`2017-06-01` [Trivial snapshots with ipfs](20170601/ipfs_snapshots.md)
