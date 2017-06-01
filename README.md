@@ -40,3 +40,5 @@
 `2017-06-01` [Configuring your node](20170601/ipfs_configuring_your_node.md)
 
 `2017-06-01` [Adding and Playing Videos](20170601/ipfs_adding_and_playing_videos.md)
+
+`2017-06-01` [Visualizing objects with graphmd](20170601/ipfs_visualizing_objects_with_graphmd.md)
