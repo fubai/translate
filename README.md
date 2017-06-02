@@ -23,6 +23,10 @@
 
 `2017-05-31` [IPLD规范](20170531/ipld.md)
 
+`2017-06-02` [Bitswap](20170602/bitswap.md)
+
+##### 例子
+
 `2017-05-31` [Dag和对象和块](20170531/Dags_and_Objects_and_Blocks.md)
 
 `2017-05-31` [IPFS集群](20170531/Be_the_swarm.md)
