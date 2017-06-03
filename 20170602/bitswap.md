@@ -138,3 +138,5 @@ bs.getBlock(multihash, (err, block) => {
 # 实现
 
 - [Go](https://github.com/ipfs/go-ipfs/tree/master/exchange/bitswap)
+
+[原文链接](https://github.com/ipfs/specs/tree/master/bitswap)
