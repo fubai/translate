@@ -25,6 +25,8 @@
 
 `2017-06-02` [Bitswap](20170602/bitswap.md)
 
+`2017-06-03` [Multiformats](20170603/multiformat.md)
+
 ##### 例子
 
 `2017-05-31` [Dag和对象和块](20170531/Dags_and_Objects_and_Blocks.md)
