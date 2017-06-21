@@ -27,6 +27,8 @@
 
 `2017-06-03` [Multiformats](20170603/multiformat.md)
 
+`2017-06-21` [Filecoin:一个以加密货币运转的文件存储网络](ipfs/filecoin_cn.pdf)
+
 ##### 例子
 
 `2017-05-31` [Dag和对象和块](20170531/Dags_and_Objects_and_Blocks.md)
