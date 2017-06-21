@@ -8,7 +8,7 @@
 
 `2017-04-05` [Java中的字符串池](java/string-pool-string-literal-pool-string.md)
 
-`2017-04-08` [Java平台和Java社区进程(JCP)概述](20170408/java-platform-and-java-community-process-overview.md)
+`2017-04-08` [Java平台和Java社区进程(JCP)概述](java/java-platform-and-java-community-process-overview.md)
 
 #### Golang
 
