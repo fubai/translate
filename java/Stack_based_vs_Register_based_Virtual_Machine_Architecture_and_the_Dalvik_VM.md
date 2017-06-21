@@ -19,7 +19,7 @@
 
 基于栈的虚拟机大致实现了前文描述的一个虚拟机所需要的特性，但其存储操作数的内存结构是一个栈。虚拟机执行操作时先从栈中POP数据，处理完后再把结果PUSH回栈（LIFO - 后入先出）。在一个基于栈的虚拟机中，两个数相加的操作一般如下执行（20，7和27是操作数）：
 
-![stackAdd](../resources/imgs/20170326/stackadd_thumb.png)
+![stackAdd](stackadd_thumb.png)
 
     1. POP 20
     2. POP 7
@@ -32,7 +32,7 @@
 
 在基于寄存器实现的虚拟机中，存储操作数的数据结构基于CPU的寄存器。这里没有POP和PUSH操作，但是指令本身需要包含操作数的地址（寄存器）。这意味着，指令的操作数要在指令里明确定位，这和基于栈的模型中以一个栈针来定位操作数不同。例如，如果要在一个基于寄存器的虚拟机中执行相加操作，差不多会是下面这样的指令：
 
-![registerAdd](../resources/imgs/20170326/registeradd_thumb.png)
+![registerAdd](registeradd_thumb.png)
 
     1. ADD R1, R2, R3 ;        # 把R1和R2的值相加，结果存储在R3
 
@@ -50,7 +50,7 @@ Dalvik虚拟机是Google为Android操作系统实现的，用于担任在Android
 
 如果要深入了解一点每个进程内部是如何获取一个Dalvik虚拟机实例的，我们就要去起始的地方...回到Android系统的Linux内核启动的地方：
 
-![androidBoot](../resources/imgs/20170326/androidboot_thumb.png)
+![androidBoot](androidboot_thumb.png)
 
 在系统启动的时候，引导加载程序把内核加载到内存中，初始化系统参数。在这之后，
 
@@ -64,7 +64,7 @@ Dalvik虚拟机是Google为Android操作系统实现的，用于担任在Android
 
 回到虚拟机的话题上，Dalvik和Java虚拟机不同的是，它执行Dalvik字节码，而不是传统的Java字节码。Java编译器和Dalvik虚拟机中间有一步，把Java字节码转成Dalvik字节码，这一步是DEX编译器做的。下图描绘了JVM和Dalvik之间的不同([点这看图片源](http://ofps.oreilly.com/titles/9781449390501/The_Stack.html)):
 
-![dalvikOperation](../resources/imgs/20170326/dalvikoperation_thumb.png)
+![dalvikOperation](dalvikoperation_thumb.png)
 
 DEX编译器把java的.class文件转成了更小且在Dalvik虚拟机上更优的.dex文件。
 

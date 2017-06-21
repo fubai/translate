@@ -2,7 +2,7 @@
 
 本文会尝试带领大家理解Java内存模型和垃圾回收的工作机制。本文用的是JDK8 Oracle Hot Spot 64 bit JVM。首先，请允许我来描绘Java进程可用的不同内存区域。
 
-![JVM Memory Allocations](../resources/imgs/20170326/jvm-memory-allocations1.png)
+![JVM Memory Allocations](jvm-memory-allocations1.png)
 
 JVM运行起来时，操作系统会为其分配内存。这里，JVM这个名词是指一个JVM进程，分配给这个进程的内存包括堆，元空间，JIT代码缓存，线程栈和共享库。我们称这些内存为本地内存。“本地内存”是操作系统提供给进程的内存。有多少内存被分配给Java进程取决于操作系统，处理器和JRE。让我解释一下JVM可用的各个内存块：
 
