@@ -12,7 +12,7 @@
 
 #### Golang
 
-`2017-05-20` [Go语言错误处理模型](20170519/error-handling-patterns-in-go.md)
+`2017-05-20` [Go语言错误处理模型](golang/error-handling-patterns-in-go.md)
 
 #### IPFS
 
