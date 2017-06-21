@@ -31,7 +31,7 @@
 
 ## 字符串池的示例图
 
-![Diagram to demonstrate String pool in java](../resources/imgs/20170406/java_string_pool.png)
+![Diagram to demonstrate String pool in java](java_string_pool.png)
 
 ## 让我们一步步讨论下面5个语句执行时将会发生什么
 ```

@@ -12,7 +12,7 @@ Java标准版和企业版[被整个世界大量使用](http://www.tiobe.com/tiob
 
 Java的每个版本都是由大量的模块组成的，这里不可能对整个平台提供一个全面的解释。所以，我简单的说明一下Java平台最重要的部分。
 
-![java-platform](../resources/imgs/20170408/java-platform.png)
+![java-platform](java-platform.png)
 
 ## Java标准版(Java SE)
 
@@ -31,7 +31,7 @@ Java虚拟机(JVM)负责支持Java应用的运行。它是Java平台的组成部
 
 要在脑子里记一个重要概念，JVM首先是一个规范(然后才是其它什么东西)。作为一个规范，不同的提供商就可以提供自己的JVM实现。[Wikipedia上有一篇保持更新的文章列出了开源和不开源的JVM](https://en.wikipedia.org/wiki/List_of_Java_virtual_machines)，最重要也最被广泛使用的JVM有：[Open JDK](http://openjdk.java.net/)(开源的)，[IBM的J9](https://www.ibm.com/support/knowledgecenter/SSYKE2_8.0.0/com.ibm.java.lnx.80.doc/user/java_jvm.html)和[Oracle JVM](http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html)(后两个都不是开源的)。
 
-![java-architectures](../resources/imgs/20170408/java-architectures.png)<p align="center">*Java应用运行在基于特定操作系统和硬件架构实现的JVM之上*</p>
+![java-architectures](java-architectures.png)<p align="center">*Java应用运行在基于特定操作系统和硬件架构实现的JVM之上*</p>
 
 ### Java类库(JCL)
 
@@ -41,7 +41,7 @@ Java类库是一系列标准库的集合，对于任何运行在*JVM*上的应�
 
 Java成员意识到Java平台变得太大了，所以已经针对这个问题在Java 8上提了一个特性[compact profiles](http://www.oracle.com/technetwork/java/embedded/resources/tech/compact-profiles-overview-2157132.html)，并把整个Java 9的API都模块化了。
 
-![JCL和它的包](../resources/imgs/20170408/JRFMOg.jpg)
+![JCL和它的包](JRFMOg.jpg)
 
 ### Java运行时环境(JRE)
 
@@ -109,7 +109,7 @@ Java非常谨慎的保持着新版本对老版本的兼容性。因此，建议�
 * 伙伴会员可以任职*执行委员会*；参加*JCP会员*活动；在*执行委员会*的年度选举中投票。
 * 正式会员可以从事*执行委员会*的工作；在*执行委员会*的年度选举中投票；作为*JSR*的贡献者以及主持规范。
 
-![JCP](../resources/imgs/20170408/PDn6o7.jpg)
+![JCP](PDn6o7.jpg)
 
 ### 执行委员会(EC)
 
@@ -147,7 +147,7 @@ Java非常谨慎的保持着新版本对老版本的兼容性。因此，建议�
 * 最终提议草案
 * 最终投票表决
 
-![JCP timeline](../resources/imgs/20170408/JCP.Timeline.12.png)
+![JCP timeline](JCP.Timeline.12.png)
 
 [JCP 2.10: 进程文档](https://jcp.org/en/procedures/jcp2#3.5.1)定义了所有这些阶段。但我下面还要做一个关于它们的总结：
 
