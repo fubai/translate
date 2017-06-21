@@ -1,6 +1,6 @@
 # 图像化对象
 
-![](imgs/graph.png)
+![](graph.png)
 
 当用IPFS存储文件或写更复杂的数据结构时，把被创建出来的merkledag可视化通常是非常有用的。为此我写了一个简单的工具叫做`graphmd`(graph merkle dag)。
 
@@ -100,7 +100,7 @@ graphmd QmRCJXG7HSmprrYwDrK1GctXHgbV7EYpVcJPQPwevoQuqF | dot -Tpng >output/graph
 
 Et voilà：[svg](https://ipfs.io/ipfs/QmbefthRKDReojALJi8nGPwvUVPqe1aXdoD9ysX44aUfvG/graph.svg)，[pdf](https://ipfs.io/ipfs/QmbefthRKDReojALJi8nGPwvUVPqe1aXdoD9ysX44aUfvG/graph.pdf)，[png](https://ipfs.io/ipfs/QmbefthRKDReojALJi8nGPwvUVPqe1aXdoD9ysX44aUfvG/graph.png)
 
-![](imgs/graph.png)
+![](graph.png)
 
 ## 文件块
 
@@ -110,7 +110,7 @@ Et voilà：[svg](https://ipfs.io/ipfs/QmbefthRKDReojALJi8nGPwvUVPqe1aXdoD9ysX44
 - [svg渲染](https://ipfs.io/ipfs/QmQ8yWC1SGn73P1SPSw8iqSBGEscve1N6sQpzd1xzD5EV1/graph.svg)
 - [pdf渲染](https://ipfs.io/ipfs/QmQ8yWC1SGn73P1SPSw8iqSBGEscve1N6sQpzd1xzD5EV1/graph.pdf)
 
-![](imgs/graph2.png)
+![](graph2.png)
 
 by [Juan Benet](https://github.com/jbenet)
 
