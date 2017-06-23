@@ -809,7 +809,7 @@ B. Bhattacharjee. Bittorrent is an auction: analyzing and improving bittorrent�
 **注**
 
 1. 例如，Linux发行版使用BitTorrent来传输磁盘镜像，暴雪公司使用它来发布视频游戏内容。
-2. 梅克尔有向无环图 - 和梅克尔树很像，但是是一个更一般化的结构，可去重，不需要平衡，非叶子节点包含数据。
+2. 默克尔有向无环图 - 和默克尔树很像，但是是一个更一般化的结构，可去重，不需要平衡，非叶子节点包含数据。
 3. 在本文档中，*哈希*与*校验和*具体指的是数据的加密哈希校验和。
 
 [原文链接](https://github.com/ipfs/papers/blob/master/ipfs-cap2pfs/ipfs-p2p-file-system.pdf)
